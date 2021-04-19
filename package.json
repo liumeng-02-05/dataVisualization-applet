@@ -35,6 +35,7 @@
   ],
   "author": "",
   "dependencies": {
+    "@antv/data-set": "^0.11.8",
     "@antv/f2": "^3.8.3",
     "@antv/f2-context": "0.0.1",
     "@babel/runtime": "^7.7.7",

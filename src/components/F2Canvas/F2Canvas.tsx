@@ -7,10 +7,8 @@ import { my as F2Context } from '@antv/f2-context'
 type propsParams = {
   id: string
   className: string
-  // style: string
+  style: string
   onInit: any,
-  width: string,
-  height: string
 }
 
 function wrapEvent(e) {
@@ -119,9 +117,9 @@ export default class F2Canvas extends React.Component<propsParams> {
     return (
       <Canvas
         className={this.props.className}
-        // style={this.props.style}
-        width= {(this.props.style && this.props.style.width) ? this.props.style.width : ''}
-        height={(this.props.style && this.props.style.height)? this.props.style.height : ''}
+        style={this.props.style}
+        width=""
+        height=""
         type="2d"
         id={this.props.id}
         onTouchStart={this.touchStart.bind(this)}
